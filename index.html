@@ -95,6 +95,7 @@
 			items.forEach(ele => create(ele[1], ele[2], ele[4]));
 		}
 
+		fetch('https://qwk.pythonanywhere.com/live'); // Resets visits
 		setInterval(() => {
 			fetch('https://qwk.pythonanywhere.com/live/api')
 			.then(resp => {
